@@ -1,6 +1,6 @@
 name: Deploy
 
-# main -> dev (test.wiebkereister.de), published release -> prod (wiebkereister.de)
+# main -> dev (dev.wiebkereister.de), published release -> prod (wiebkereister.de)
 on:
   push:
     branches: [main]

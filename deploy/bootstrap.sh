@@ -62,7 +62,7 @@ systemctl reload caddy || systemctl restart caddy
 ufw allow 22/tcp >/dev/null
 ufw allow 80/tcp >/dev/null
 ufw allow 443/tcp >/dev/null
-ufw allow 8081/tcp >/dev/null  # dev via IP; remove once test.wiebkereister.de works
+ufw allow 8081/tcp >/dev/null  # dev via IP; remove once dev.wiebkereister.de works
 ufw --force enable >/dev/null
 
 echo "bootstrap done. Services start with the first deployment."

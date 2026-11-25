@@ -73,7 +73,7 @@ data directory, port and systemd service, behind Caddy:
 |---|---|---|
 | Trigger | push/merge to `main` | published GitHub release |
 | URL (now) | `http://<IP>:8081` | `http://<IP>` |
-| URL (later) | `https://test.wiebkereister.de` | `https://wiebkereister.de` |
+| URL (later) | `https://dev.wiebkereister.de` | `https://wiebkereister.de` |
 | Service | `wiebkereister@dev` | `wiebkereister@prod` |
 | Data | `/var/lib/wiebkereister/dev` | `/var/lib/wiebkereister/prod` |
 
@@ -98,7 +98,7 @@ rolls back to the previous release (the last 5 are kept in
 ### Switching to the domains
 
 The Caddyfile already contains the domains, so the only step is DNS: point the
-A records of `test`, then `wiebkereister.de` and `www` to the server's IP.
+A records of `dev`, then `wiebkereister.de` and `www` to the server's IP.
 Caddy fetches the Let's Encrypt certificates on its own as soon as a record
 resolves. Leave e-mail records (MX, SPF, DKIM) untouched, and remove any old
 AAAA record or point it at the server's IPv6 address.
@@ -114,7 +114,7 @@ Bitte nur diese Einträge der Zone `wiebkereister.de` ändern:
 
 | Name | Typ | Neuer Wert | Bisher |
 |---|---|---|---|
-| `test.wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
+| `dev.wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
 | `wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
 | `www.wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
 
@@ -132,8 +132,8 @@ die drei A-Einträge zu ändern.
 **Ablauf:**
 
 1. Etwa 24 Stunden vorher die TTL der drei Einträge auf 300 Sekunden senken.
-2. Zuerst nur `test.wiebkereister.de` umstellen. Wir prüfen, ob die Seite
-   unter `https://test.wiebkereister.de` mit gültigem Zertifikat läuft.
+2. Zuerst nur `dev.wiebkereister.de` umstellen. Wir prüfen, ob die Seite
+   unter `https://dev.wiebkereister.de` mit gültigem Zertifikat läuft.
 3. Nach unserer Freigabe `wiebkereister.de` und `www` umstellen. Das
    HTTPS-Zertifikat holt der Server selbst, auf eurer Seite ist dafür nichts zu tun.
 4. Rückgängig machen geht jederzeit, indem die Einträge wieder auf

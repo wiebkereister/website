@@ -3,7 +3,7 @@
 # on its own (it keeps retrying until the DNS is correct); no further step needed.
 #
 #   prod: https://wiebkereister.de        (fallback: http://<IP>/)
-#   dev:  https://test.wiebkereister.de   (fallback: http://<IP>:8081/)
+#   dev:  https://dev.wiebkereister.de   (fallback: http://<IP>:8081/)
 wiebkereister.de {
 	encode zstd gzip
 	reverse_proxy 127.0.0.1:18080
@@ -13,7 +13,7 @@ www.wiebkereister.de {
 	redir https://wiebkereister.de{uri} permanent
 }
 
-test.wiebkereister.de {
+dev.wiebkereister.de {
 	encode zstd gzip
 	header X-Robots-Tag "noindex, nofollow"
 	reverse_proxy 127.0.0.1:18081
