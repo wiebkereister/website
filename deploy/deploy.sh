@@ -25,6 +25,10 @@ if [[ ! -e "$DATA/.seeded" ]]; then
   touch "$DATA/.seeded"
 fi
 
+# the site is served from dist/, so rebuild it with every release (theme and
+# templates are embedded in the binary; also covers content seeded just now)
+( cd "$REL" && set -a && . "/etc/wiebkereister/$ENV.env" && set +a && ./wiebkereister build )
+
 PREV="$(readlink -f "$ROOT/current" || true)"
 ln -sfn "$REL" "$ROOT/current.new" && mv -Tf "$ROOT/current.new" "$ROOT/current"
 sudo /usr/bin/systemctl restart "wiebkereister@$ENV"
