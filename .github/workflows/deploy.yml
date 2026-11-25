@@ -1,0 +1,57 @@
+name: Deploy
+
+# main -> dev (dev.wiebkereister.de), published release -> prod (wiebkereister.de)
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+
+concurrency:
+  group: deploy-${{ github.event_name }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: go vet ./...
+      - run: go test ./...
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment: ${{ github.event_name == 'release' && 'prod' || 'dev' }}
+    env:
+      TARGET: ${{ github.event_name == 'release' && 'prod' || 'dev' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Build
+        run: |
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o wiebkereister .
+          tar -czf release.tar.gz wiebkereister seed
+
+      - name: Prepare SSH
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_ed25519 && chmod 600 ~/.ssh/id_ed25519
+          echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Upload and deploy
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+        run: |
+          scp release.tar.gz "deploy@$HOST:/tmp/wiebkereister-$TARGET.tar.gz"
+          scp deploy/deploy.sh "deploy@$HOST:/tmp/wiebkereister-deploy.sh"
+          ssh "deploy@$HOST" "bash /tmp/wiebkereister-deploy.sh $TARGET /tmp/wiebkereister-$TARGET.tar.gz; rc=\$?; rm -f /tmp/wiebkereister-deploy.sh; exit \$rc"

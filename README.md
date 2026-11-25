@@ -63,3 +63,29 @@ and run it again.
 ```sh
 go test ./...
 ```
+
+## Deployment
+
+| | dev | prod |
+|---|---|---|
+| Trigger | push to `main` | published release |
+| URL | `https://dev.wiebkereister.de` | `https://wiebkereister.de` |
+| Service | `wiebkereister@dev` | `wiebkereister@prod` |
+| Data | `/var/lib/wiebkereister/dev` | `/var/lib/wiebkereister/prod` |
+| Releases | `/opt/wiebkereister/dev/releases` | `/opt/wiebkereister/prod/releases` |
+
+Setup (once):
+
+```sh
+ssh-keygen -t ed25519 -f deploy_key -N "" -C github-deploy
+sudo bash deploy/bootstrap.sh "$(cat deploy_key.pub)"   # on the server, re-runnable
+```
+
+GitHub environments `dev` and `prod`, each with the secrets `DEPLOY_HOST`,
+`DEPLOY_SSH_KEY`, `DEPLOY_KNOWN_HOSTS` (`ssh-keyscan -t ed25519 <host>`).
+
+Admin user (per environment):
+
+```sh
+sudo -u deploy bash -c 'cd /opt/wiebkereister/dev/current && set -a && . /etc/wiebkereister/dev.env && set +a && ./wiebkereister user add you@example.com'
+```

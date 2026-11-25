@@ -1,0 +1,32 @@
+# Domains and the plain-IP access run side by side. As soon as a domain's DNS
+# record points to this server, Caddy obtains a Let's Encrypt certificate for it
+# on its own (it keeps retrying until the DNS is correct); no further step needed.
+#
+#   prod: https://wiebkereister.de        (fallback: http://<IP>/)
+#   dev:  https://dev.wiebkereister.de   (fallback: http://<IP>:8081/)
+wiebkereister.de {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:18080
+}
+
+www.wiebkereister.de {
+	redir https://wiebkereister.de{uri} permanent
+}
+
+dev.wiebkereister.de {
+	encode zstd gzip
+	header X-Robots-Tag "noindex, nofollow"
+	reverse_proxy 127.0.0.1:18081
+}
+
+# access by IP (no certificate possible)
+http://:80 {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:18080
+}
+
+http://:8081 {
+	encode zstd gzip
+	header X-Robots-Tag "noindex, nofollow"
+	reverse_proxy 127.0.0.1:18081
+}
