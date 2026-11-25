@@ -66,33 +66,26 @@ go test ./...
 
 ## Deployment
 
-Two environments run on one server (Host Europe VPS), each with its own
-data directory, port and systemd service, behind Caddy (automatic HTTPS):
-
 | | dev | prod |
 |---|---|---|
-| Trigger | push/merge to `main` | published GitHub release |
+| Trigger | push to `main` | published release |
 | URL | `https://dev.wiebkereister.de` | `https://wiebkereister.de` |
 | Service | `wiebkereister@dev` | `wiebkereister@prod` |
 | Data | `/var/lib/wiebkereister/dev` | `/var/lib/wiebkereister/prod` |
+| Releases | `/opt/wiebkereister/dev/releases` | `/opt/wiebkereister/prod/releases` |
 
-Content is edited in each environment's admin (`/admin/`), so the data
-directories are **not** touched by deployments; only the binary is replaced.
-The first deployment seeds an empty data directory. A failing health check
-rolls back to the previous release (the last 5 are kept in
-`/opt/wiebkereister/<env>/releases`).
+Setup (once):
 
-### Setup (once)
+```sh
+ssh-keygen -t ed25519 -f deploy_key -N "" -C github-deploy
+sudo bash deploy/bootstrap.sh "$(cat deploy_key.pub)"   # on the server, re-runnable
+```
 
-1. Create a deploy key: `ssh-keygen -t ed25519 -f deploy_key -N "" -C github-deploy`
-2. On the server as root: `bash deploy/bootstrap.sh "$(cat deploy_key.pub)"`
-3. In GitHub, create the environments `dev` and `prod` (add required
-   reviewers on `prod` if wanted) and set in each the secrets
-   `DEPLOY_HOST` (IP/hostname), `DEPLOY_SSH_KEY` (private key) and
-   `DEPLOY_KNOWN_HOSTS` (`ssh-keyscan -t ed25519 <host>`).
-4. Merge to `main` → dev is live. Create a release → prod is live.
-5. Create the admin users, per environment (the password is read from stdin):
+GitHub environments `dev` and `prod`, each with the secrets `DEPLOY_HOST`,
+`DEPLOY_SSH_KEY`, `DEPLOY_KNOWN_HOSTS` (`ssh-keyscan -t ed25519 <host>`).
 
-   ```sh
-   sudo -u deploy bash -c 'cd /opt/wiebkereister/dev/current && set -a && . /etc/wiebkereister/dev.env && set +a && ./wiebkereister user add you@example.com'
-   ```
+Admin user (per environment):
+
+```sh
+sudo -u deploy bash -c 'cd /opt/wiebkereister/dev/current && set -a && . /etc/wiebkereister/dev.env && set +a && ./wiebkereister user add you@example.com'
+```
