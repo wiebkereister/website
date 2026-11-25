@@ -1,0 +1,80 @@
+{{define "layout"}}{{$p := .Page}}{{$c := $p.Site.contact}}<!doctype html>
+<html lang="{{with $p.Site.language}}{{.}}{{else}}de{{end}}">
+<head>
+{{template "baseplate/head" $p}}
+<link rel="preload" href="/assets/fonts/raleway.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" href="/favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/"><img src="/assets/img/logo.png" alt="Wiebke Reister – Privatpraxis für Physiotherapie" width="600" height="188"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hauptnavigation">Menü</button>
+    <nav id="hauptnavigation" class="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        {{range navigation "main" $p}}{{if .Items}}
+        <li class="has-sub">
+          {{template "navanchor" .}}
+          {{$mega := false}}{{range .Items}}{{if .Items}}{{$mega = true}}{{end}}{{end}}
+          <div class="submenu{{if $mega}} mega{{end}}">
+            {{if $mega}}{{range .Items}}<div>
+              <p class="submenu-title">{{if .URL}}<a href="{{.URL}}">{{.Title}}</a>{{else}}{{.Title}}{{end}}</p>
+              <ul{{if gt (len .Items) 6}} class="columns-2"{{end}}>{{range .Items}}<li>{{template "navanchor" .}}</li>{{end}}</ul>
+            </div>{{end}}
+            {{with $p.Site.menuTeaser}}{{if .title}}<div class="submenu-teaser">
+              <p class="submenu-title">{{.title}}</p>
+              {{with .text}}<p>{{.}}</p>{{end}}
+              {{if .url}}<a class="button" href="{{.url}}">{{.label}}</a>{{end}}
+            </div>{{end}}{{end}}
+            {{else}}<ul>{{range .Items}}<li>{{template "navanchor" .}}</li>{{end}}</ul>{{end}}
+          </div>
+        </li>{{else}}
+        <li>{{template "navanchor" .}}</li>{{end}}{{end}}
+      </ul>
+      {{range navigation "cta" $p}}<a class="button header-cta" href="{{.URL}}">{{.Title}}</a>{{end}}
+    </nav>
+  </div>
+</header>
+<main id="inhalt">
+{{.Content}}
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="/"><img src="/assets/img/logo.png" alt="Wiebke Reister – Privatpraxis für Physiotherapie" width="600" height="188" loading="lazy"></a>
+      {{with $c.footerText}}<p>{{.}}</p>{{end}}
+      {{range navigation "cta" $p}}<a class="button" href="{{.URL}}">{{.Title}}</a>{{end}}
+    </div>
+    <div>
+      <p class="footer-title">Seiten</p>
+      <ul>
+        {{range navigation "main" $p}}<li><a href="{{.URL}}">{{.Title}}</a></li>{{end}}
+      </ul>
+    </div>
+    <div>
+      <p class="footer-title">Kontakt</p>
+      {{template "address" $c}}
+      {{template "reach" $c}}
+    </div>
+    <div>
+      <p class="footer-title">Kurszeiten</p>
+      <p>{{range $i, $l := lines $c.hours}}{{if $i}}<br>{{end}}{{$l}}{{end}}</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {{year}} Wiebke Reister · Privatpraxis für Physiotherapie</p>
+    <p>{{range $i, $l := navigation "legal" $p}}{{if $i}} · {{end}}<a href="{{$l.URL}}">{{$l.Title}}</a>{{end}}</p>
+  </div>
+</footer>
+</body>
+</html>{{end}}
+
+{{define "navanchor"}}<a href="{{.URL}}"{{if .Active}} class="active"{{end}}{{if .Current}} aria-current="page"{{end}}>{{.Title}}</a>{{end}}
+
+{{define "address"}}<p>{{with .locationName}}{{if $.locationURL}}<a href="{{$.locationURL}}">{{.}}</a>{{else}}{{.}}{{end}}<br>{{end}}{{with .street}}{{.}}<br>{{end}}{{.city}}</p>{{end}}
+{{define "reach"}}<p>{{with .phone}}<a href="{{telHref .}}">{{.}}</a><br>{{end}}{{with .email}}<a href="mailto:{{.}}">{{.}}</a>{{end}}</p>{{end}}

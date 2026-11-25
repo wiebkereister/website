@@ -1,0 +1,6 @@
+data/
+dist/
+dist.tmp/
+dist.old/
+dist.lock
+/wiebkereister

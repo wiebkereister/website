@@ -1,0 +1,975 @@
+{
+  "settings": {
+    "siteName": "Wiebke Reister – Privatpraxis für Physiotherapie",
+    "baseURL": "https://wiebkereister.de",
+    "language": "de",
+    "timezone": "Europe/Berlin",
+    "llmsTxt": true,
+    "contact": {
+      "locationName": "Villa Adebar",
+      "locationURL": "https://villa-adebar.de/physiotherapie/",
+      "street": "Oststrasse 16",
+      "city": "51766 Engelskirchen",
+      "phone": "0163 – 28 90 824",
+      "email": "wiebke.reister@gmail.com",
+      "hours": "Montag bis Freitag 8-20 Uhr\nTermin nur nach Vereinbarung\nSprechstunde Do von 12-17 Uhr",
+      "footerText": "Privatpraxis für Physiotherapie in der Villa Adebar in Engelskirchen – individuelle Termine, Sprechstunde und Kurse rund um Beckenboden, Rückbildung und Physiotherapie."
+    },
+    "menuTeaser": {
+      "title": "Sprechstunde: Beckenboden / Rektusdiastase",
+      "text": "Abklärung und Beratung in der Villa Adebar in Engelskirchen.",
+      "label": "Terminvereinbarung",
+      "url": "https://villa-adebar.de/physiotherapie-sprechstunde/"
+    }
+  },
+  "pages": [
+    {
+      "title": "Startseite",
+      "slug": "index",
+      "seo": {
+        "metaTitle": "Physiotherapie Engelskirchen – Privatpraxis Wiebke Reister",
+        "metaDescription": "Privatpraxis für Physiotherapie in der Villa Adebar, Engelskirchen: Behandlung ohne Rezept, Beckenbodentherapie, manuelle Therapie und Yoga. Jetzt Termin anfragen."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Willkommen in der Privatpraxis für Physiotherapie",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Kontakt",
+                  "href": "/kontakt/"
+                },
+                {
+                  "label": "E-Mail",
+                  "href": "mailto:wiebke.reister@gmail.com"
+                }
+              ]
+            }
+          ],
+          "image": "media:praxis-behandlung.jpg",
+          "alt": "Physiotherapeutische Behandlung in der Privatpraxis Wiebke Reister"
+        },
+        {
+          "_type": "section",
+          "title": "Physiotherapie Wiebke Reister",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Bewegung ist ein wichtiger Bestandteil unserer Gesundheit.<br>In meiner Praxis unterstütze ich Sie dabei, Beschwerden zu lindern, Ihre Beweglichkeit zu verbessern und wieder mehr Vertrauen in den eigenen Körper zu gewinnen.</p>\n<p>Jede Behandlung wird individuell auf Ihre Bedürfnisse abgestimmt – mit Zeit, Erfahrung und persönlicher Betreuung.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Mehr über mich",
+                  "href": "/ueber-mich/"
+                }
+              ]
+            }
+          ],
+          "image": "media:wiebke-reister-praxis.jpg",
+          "alt": "Wiebke Reister in ihrer Praxis für Physiotherapie",
+          "imageSide": "left",
+          "tone": "muted"
+        },
+        {
+          "_type": "section",
+          "title": "Physiotherapie",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Physiotherapie hilft dabei, Schmerzen zu reduzieren, Bewegungsabläufe zu verbessern und den Körper langfristig zu stärken.</p>\n<p>Die Therapie richtet sich nach Ihren Beschwerden und Zielen und wird gemeinsam Schritt für Schritt aufgebaut.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Mehr zum Thema",
+                  "href": "/physiotherapie/"
+                }
+              ]
+            }
+          ],
+          "image": "media:physiotherapie-behandlung.jpg",
+          "alt": "Physiotherapie-Behandlung in der Praxis Wiebke Reister"
+        },
+        {
+          "_type": "section",
+          "title": "Kurse für Bewegung und Prävention",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Neben der Einzeltherapie werden in der Praxis auch kleine Kurse angeboten.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Alle Kurse im Überblick",
+                  "href": "/kurse/"
+                }
+              ]
+            },
+            {
+              "_type": "heading",
+              "text": "Weitere Behandlungen",
+              "level": "h3"
+            },
+            {
+              "_type": "richtext",
+              "html": "<p>Ob Beckenbodentherapie, Behandlung in der Schwangerschaft oder spezialisierte physiotherapeutische Methoden – entdecken Sie weitere Therapieangebote und erfahren Sie mehr über die Möglichkeiten einer individuellen Behandlung.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Alle Leistungen auf einen Blick",
+                  "href": "/physiotherapie/#leistungen"
+                }
+              ]
+            }
+          ],
+          "image": "media:workshop-schulter-nacken-kiefer.jpg",
+          "alt": "Workshop für Schulter, Nacken und Kiefer in der Praxis Wiebke Reister",
+          "imageSide": "left",
+          "tone": "muted"
+        },
+        {
+          "_type": "section",
+          "title": "Ich freue mich auf Ihre Anfrage",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Sie möchten einen Termin vereinbaren oder haben Fragen zu einer Behandlung?<br>Nehmen Sie gerne Kontakt mit mir auf. Gemeinsam finden wir einen passenden Termin für Ihre Behandlung oder Beratung.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Terminvereinbarung",
+                  "href": "/kontakt/"
+                }
+              ]
+            }
+          ],
+          "anchor": "kontakt",
+          "tone": "cta"
+        },
+        {
+          "_type": "section",
+          "title": "Meine Kooperationspartner",
+          "level": "h3",
+          "children": [
+            {
+              "_type": "logos",
+              "items": [
+                {
+                  "image": "media:logo-yoga-bergisches-land.png",
+                  "alt": "Logo Yoga Bergisches Land"
+                },
+                {
+                  "image": "media:logo-villa-adebar.png",
+                  "alt": "Logo Hebammenpraxis Villa Adebar"
+                }
+              ]
+            },
+            {
+              "_type": "richtext",
+              "html": "<p>Meine Praxis arbeitet eng mit der Hebammenpraxis <strong>Villa Adebar</strong> und dem Yogastudio <strong>Yoga Bergisches Land</strong> in Engelskirchen-Ründeroth zusammen. Beide Orte stehen für eine ganzheitliche Begleitung rund um Gesundheit, Bewegung und persönliche Entwicklung. Während die Villa Adebar Familien rund um Schwangerschaft und Geburt begleitet, bietet Yoga Bergisches Land Raum für Yoga, Weiterbildung und gemeinsames Lernen.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Über mich",
+      "slug": "ueber-mich",
+      "seo": {
+        "metaTitle": "Über mich – Physiotherapeutin Wiebke Reister, Engelskirchen",
+        "metaDescription": "Staatlich anerkannte Physiotherapeutin (B.Sc.) mit Klinik- und Praxiserfahrung, seit 2015 selbstständig. Schwerpunkte: Beckenboden, Rektusdiastase, Yoga."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Über mich",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Mein Weg zur Physiotherapie begann mit einer eigenen Erfahrung: Nach einem Sportunfall und der anschließenden Behandlung meiner Knieverletzung entstand mein Interesse für die medizinischen und physiologischen Zusammenhänge von Anatomie und Bewegung. Diese Erfahrung hat meinen beruflichen Weg geprägt. Heute verbinde ich meine Leidenschaft für Bewegung, Gesundheit und Yoga mit meiner Arbeit als Physiotherapeutin und begleite Menschen dabei, ihren Körper besser zu verstehen und zu stärken.</p>"
+            }
+          ],
+          "kicker": "Ihr persönlicher Weg zur Physiotherapie",
+          "image": "media:wiebke-reister-portrait.jpg",
+          "alt": "Wiebke Reister – Physiotherapeutin in Engelskirchen-Ründeroth"
+        },
+        {
+          "_type": "section",
+          "title": "Erfahrung aus Praxis, Klinik und Therapie",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Nach meiner Ausbildung zur Physiotherapeutin und dem anschließenden Studium sammelte ich zunächst mehrere Jahre Erfahrung in einer Kölner Klinik. Anschließend arbeitete ich in einer physiotherapeutischen Praxis und betreute zudem Leistungssportler des Tennisverbandes Mittelrhein. Seit 2015 bin ich selbstständig tätig. Heute arbeite ich in der Hebammenpraxis Villa Adebar in Engelskirchen-Ründeroth, wo ich physiotherapeutische Behandlungen, Sprechstunden sowie Yogakurse anbiete.</p>"
+            }
+          ],
+          "image": "media:wiebke-reister-arbeit.jpg",
+          "alt": "Wiebke Reister bei der physiotherapeutischen Arbeit",
+          "imageSide": "left",
+          "tone": "muted"
+        },
+        {
+          "_type": "section",
+          "title": "Fundierte Ausbildung und kontinuierliche Weiterbildung",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Eine solide Ausbildung und regelmäßige Weiterbildungen sind für mich die Grundlage einer verantwortungsvollen Therapie. Neben meinem Staatsexamen und dem Bachelorstudium der Physiotherapie habe ich zahlreiche Spezialisierungen absolviert, unter anderem in Beckenbodentherapie, Rektusdiastase-Behandlung, manueller Therapie und neurophysiologischen Behandlungskonzepten. Diese Qualifikationen ermöglichen es mir, meine Patientinnen individuell zu begleiten und Therapie, Training und Körperwahrnehmung sinnvoll miteinander zu verbinden.</p>"
+            }
+          ],
+          "image": "media:behandlungsraum.jpg",
+          "alt": "Behandlungsraum der Privatpraxis für Physiotherapie"
+        },
+        {
+          "_type": "section",
+          "title": "Ich freue mich auf Ihre Anfrage",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Sie möchten einen Termin vereinbaren oder haben Fragen zu einer Behandlung?<br>Nehmen Sie gerne Kontakt mit mir auf. Gemeinsam finden wir einen passenden Termin für Ihre Behandlung oder Beratung.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Terminvereinbarung",
+                  "href": "/kontakt/"
+                }
+              ]
+            }
+          ],
+          "anchor": "kontakt",
+          "tone": "cta"
+        }
+      ]
+    },
+    {
+      "title": "Physiotherapie",
+      "slug": "physiotherapie",
+      "seo": {
+        "metaTitle": "Physiotherapie ohne Rezept in Engelskirchen | Wiebke Reister",
+        "metaDescription": "Heilpraktikerin für Physiotherapie: Behandlung ohne ärztliche Verordnung – manuelle Therapie, Beckenboden- und Rektusdiastase-Therapie, CMD u. v. m. in Engelskirchen."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Physiotherapie",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>In der Villa Adebar in Engelskirchen begleite ich Sie mit dem gesamten Spektrum der Physiotherapie. Wenn Sie Unterstützung benötigen, können Sie einfach einen individuellen Termin vereinbaren oder mein Sprechstunden-Angebot nutzen.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Termin anfragen",
+                  "href": "/kontakt/"
+                }
+              ]
+            }
+          ],
+          "image": "media:manuelle-physiotherapie.jpg",
+          "alt": "Manuelle Physiotherapie"
+        },
+        {
+          "_type": "section",
+          "title": "Heilpraktikerin für Physiotherapie",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Durch meine Zusatzqualifikation als sektorale Heilpraktikerin für Physiotherapie können Sie direkt zu mir kommen – ganz ohne vorherigen Arztbesuch.</p>\n<p>Nach einer ausführlichen Anamnese und meiner physiotherapeutischen Diagnosestellung besprechen wir gemeinsam, welche Behandlung für Sie sinnvoll ist. Dabei klären wir auch Umfang, Häufigkeit und Kosten der Therapie. So entsteht eine Behandlung, die genau auf Ihre Beschwerden und Ihre persönliche Situation abgestimmt ist.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Behandlungen im Detail",
+                  "href": "#faq1"
+                }
+              ]
+            }
+          ],
+          "tone": "muted"
+        },
+        {
+          "_type": "section",
+          "title": "Sprechstunde: Beckenboden / Rektusdiastase",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Eine Rektusdiastase oder eine Beckenbodenschwäche treten häufig nach einer Schwangerschaft auf. Viele Frauen fragen sich jedoch, woran man diese Veränderungen erkennt und welche Behandlungsmöglichkeiten es gibt.</p>\n<p>In der Sprechstunde wird zunächst festgestellt, ob eine entsprechende Dysfunktion vorliegt. Anschließend besprechen wir gemeinsam, welche Behandlung oder welche weiteren Schritte sinnvoll sein können.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Terminvereinbarung",
+                  "href": "https://villa-adebar.de/physiotherapie-sprechstunde/"
+                }
+              ]
+            }
+          ],
+          "image": "media:sprechstunde-beckenboden.jpg",
+          "alt": "Physiotherapie-Behandlung bei Wiebke Reister",
+          "imageSide": "left"
+        },
+        {
+          "_type": "section",
+          "title": "Leistungen Physiotherapie",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<ul>\n<li>Manuelle Therapie</li>\n<li>Beckenbodentherapie</li>\n<li>Rektusdiastasen-Therapie</li>\n<li>Viszerale Therapie</li>\n<li>Bobath-Therapie</li>\n<li>Atemtherapie</li>\n<li>CMD-Behandlung</li>\n<li>Craniosacrale Therapie</li>\n<li>Lymphdrainage</li>\n<li>Kinesiotaping</li>\n<li>Basale Stimulation</li>\n</ul>"
+            }
+          ],
+          "anchor": "leistungen",
+          "tone": "muted"
+        },
+        {
+          "_type": "faq",
+          "anchor": "faq1",
+          "title": "Häufige Fragen zur physiotherapeutischen Behandlung ohne ärztliche Verordnung",
+          "items": [
+            {
+              "question": "Was bedeutet Heilpraktikerin für Physiotherapie?",
+              "answer": "Als sektorale Heilpraktikerin für Physiotherapie darf ich Sie direkt physiotherapeutisch behandeln, ohne dass Sie vorher eine ärztliche Verordnung benötigen. Das bedeutet, dass Sie sich bei akuten oder länger bestehenden Beschwerden unmittelbar an mich wenden können. Nach einer ausführlichen Anamnese und Befunderhebung entscheide ich gemeinsam mit Ihnen, welche Behandlung sinnvoll ist."
+            },
+            {
+              "question": "Brauche ich für die Behandlung ein Rezept?",
+              "answer": "Nein, für die Behandlung bei mir brauchen Sie kein Rezept. Durch meine Zusatzqualifikation kann ich Sie auch ohne ärztliche Überweisung physiotherapeutisch untersuchen und behandeln. Das erleichtert vielen Patientinnen und Patienten den Zugang zur Therapie und spart Zeit, wenn Beschwerden zeitnah behandelt werden sollen."
+            },
+            {
+              "question": "Für welche Beschwerden kann ich direkt zu Ihnen kommen?",
+              "answer": "Sie können mit vielen Beschwerden des Bewegungsapparates direkt zu mir kommen, zum Beispiel bei Rücken-, Nacken- oder Gelenkschmerzen, muskulären Verspannungen, Beschwerden nach körperlicher Belastung oder funktionellen Einschränkungen. Auch bei Themen rund um Beckenboden, Schwangerschaft oder Bauchwand kann ein direkter Termin sinnvoll sein. Sollte ärztliche Abklärung notwendig sein, spreche ich das selbstverständlich offen mit Ihnen an."
+            },
+            {
+              "question": "Wie läuft der erste Termin ab?",
+              "answer": "Beim ersten Termin nehme ich mir Zeit für ein ausführliches Gespräch über Ihre Beschwerden, Ihre Vorgeschichte und Ihre Ziele. Danach folgt eine physiotherapeutische Untersuchung, um Ihre Situation genauer einschätzen zu können. Auf dieser Grundlage bespreche ich mit Ihnen, welche Behandlungsmöglichkeiten geeignet sind und wie der weitere Ablauf aussehen kann."
+            },
+            {
+              "question": "Was ist der Vorteil einer Behandlung ohne Umweg über die Arztpraxis?",
+              "answer": "Der größte Vorteil ist, dass Sie schneller Unterstützung bekommen können. Gerade bei Schmerzen oder funktionellen Beschwerden ist es oft hilfreich, frühzeitig mit einer passenden Therapie zu beginnen. Außerdem können wir in Ruhe besprechen, welche Maßnahmen für Sie individuell sinnvoll sind, ohne zunächst auf eine ärztliche Verordnung warten zu müssen."
+            },
+            {
+              "question": "Übernehmen Krankenkassen die Kosten?",
+              "answer": "Private Krankenversicherungen, Beihilfestellen oder Zusatzversicherungen übernehmen die Kosten häufig ganz oder teilweise. Das hängt jedoch immer vom jeweiligen Tarif ab. Wenn Sie gesetzlich versichert sind, können Sie die Behandlung in der Regel als Selbstzahlerleistung in Anspruch nehmen. Bitte informieren Sie sich am besten vorab bei Ihrer Krankenkasse oder Versicherung über die Erstattungsmöglichkeiten."
+            },
+            {
+              "question": "Was kostet die Behandlung?",
+              "answer": "Die Kosten richten sich nach Art und Umfang der Behandlung. Nach dem ersten Gespräch und der Befunderhebung kann ich Ihnen transparent erläutern, welche Leistungen für Sie sinnvoll sind und welche Kosten dadurch entstehen. So haben Sie von Anfang an eine klare Grundlage für Ihre Entscheidung."
+            },
+            {
+              "question": "Woran erkennen Sie, ob eine physiotherapeutische Behandlung ausreicht?",
+              "answer": "Im Rahmen der Anamnese und Untersuchung prüfe ich sorgfältig, ob Ihre Beschwerden in mein physiotherapeutisches Behandlungsfeld fallen. Wenn es Hinweise darauf gibt, dass eine weiterführende ärztliche Diagnostik notwendig ist, empfehle ich Ihnen selbstverständlich, zusätzlich eine Ärztin oder einen Arzt aufzusuchen. Ihre Sicherheit und eine verantwortungsvolle Einschätzung stehen immer im Mittelpunkt."
+            },
+            {
+              "question": "Kann ich auch kommen, wenn ich schon lange Beschwerden habe?",
+              "answer": "Ja, selbstverständlich. Nicht nur akute, sondern auch chronische oder wiederkehrende Beschwerden können physiotherapeutisch begleitet werden. Gerade bei länger bestehenden Problemen ist es oft wichtig, die Ursachen, Bewegungsmuster und Belastungen im Alltag genauer zu betrachten, um eine individuell passende Behandlung zu entwickeln."
+            },
+            {
+              "question": "Was besprechen wir vor Beginn der Therapie?",
+              "answer": "Vor Beginn der Therapie besprechen wir gemeinsam Ihre Beschwerden, Ihre Erwartungen und Ihre persönlichen Ziele. Außerdem klären wir, welche Maßnahmen sinnvoll sind, in welchem zeitlichen Umfang die Behandlung stattfinden sollte und welche Kosten auf Sie zukommen. So entsteht eine transparente und individuell abgestimmte Therapieplanung."
+            }
+          ]
+        },
+        {
+          "_type": "faq",
+          "anchor": "faq-rektusdiastase",
+          "title": "Häufige Fragen zur Behandlung einer Rektusdiastase",
+          "items": [
+            {
+              "question": "Was ist eine Rektusdiastase?",
+              "answer": "Eine Rektusdiastase ist das Auseinanderweichen der geraden Bauchmuskeln entlang der Bauchmitte. Das kann besonders während oder nach einer Schwangerschaft auftreten, wenn das Gewebe durch die wachsende Belastung nachgibt. Nicht jede Rektusdiastase verursacht Beschwerden, aber wenn die Bauchwand instabil ist, kann das Auswirkungen auf Haltung, Belastbarkeit und Körpergefühl haben."
+            },
+            {
+              "question": "Woran erkenne ich eine mögliche Rektusdiastase?",
+              "answer": "Hinweise können sein, dass sich die Bauchdecke trotz Training nicht stabil anfühlt, die Bauchmitte beim Aufrichten nach vorne wölbt oder ein Spalt oberhalb oder unterhalb des Bauchnabels tastbar ist. Manche Patientinnen berichten auch über ein Unsicherheitsgefühl in der Körpermitte oder darüber, dass der Bauch trotz Rückbildung weiterhin deutlich vorgewölbt bleibt. Eine genaue Einschätzung sollte jedoch immer individuell erfolgen."
+            },
+            {
+              "question": "Muss eine Rektusdiastase operiert werden?",
+              "answer": "In den meisten Fällen ist eine Operation nicht notwendig. Häufig kann eine gezielte physiotherapeutische Behandlung helfen, die Bauchwand funktionell zu verbessern und Beschwerden zu lindern. Entscheidend ist nicht nur die Breite des Spalts, sondern vor allem, wie gut die Bauchwand im Alltag zusammenarbeitet und stabilisiert. Nur in bestimmten Fällen ist eine operative Abklärung sinnvoll."
+            },
+            {
+              "question": "Welche Beschwerden kann eine Rektusdiastase verursachen?",
+              "answer": "Eine Rektusdiastase kann mit Rückenschmerzen, Instabilitätsgefühl in der Körpermitte, Fehlbelastungen oder eingeschränkter Belastbarkeit einhergehen. Auch Beschwerden im Beckenbodenbereich oder ein Druckgefühl im Bauch können damit zusammenhängen. In manchen Fällen begünstigt die verminderte Spannung in der Bauchwand auch das Entstehen von Hernien oder verstärkt bereits bestehende funktionelle Beschwerden."
+            },
+            {
+              "question": "Wie kann Physiotherapie bei einer Rektusdiastase helfen?",
+              "answer": "In der Physiotherapie geht es darum, die Bauchwand gezielt und funktionell zu unterstützen. Ich helfe Ihnen dabei, Ihre Körpermitte besser wahrzunehmen, passende Muskelgruppen sinnvoll anzusteuern und ungünstige Bewegungs- oder Belastungsmuster zu verändern. Ziel ist nicht einfach nur „Bauchtraining\", sondern eine alltagsrelevante Stabilisierung, die zu Ihrer individuellen Situation passt."
+            },
+            {
+              "question": "Geht es bei der Behandlung nur um die Optik?",
+              "answer": "Nein, die Behandlung richtet sich nicht nur nach dem äußeren Erscheinungsbild. Zwar empfinden viele Frauen die Veränderung der Bauchmitte auch optisch als belastend, im Vordergrund stehen jedoch die funktionellen Auswirkungen. Wenn die Bauchwand nicht gut stabilisiert, kann das Einfluss auf Haltung, Rücken, Beckenboden und Belastbarkeit im Alltag haben. Deshalb ist eine gezielte Begleitung oft sinnvoll."
+            },
+            {
+              "question": "Wie läuft die Behandlung bei Bauchwanddysfunktionen ab?",
+              "answer": "Zu Beginn steht ein ausführliches Gespräch über Ihre Beschwerden, Ihre Vorgeschichte und Ihren Alltag. Danach schaue ich mir an, wie Ihre Bauchwand, Ihre Atmung, Ihre Haltung und Ihre Rumpfstabilität zusammenarbeiten. Auf dieser Grundlage entwickeln wir eine Behandlung, die Übungen, Wahrnehmungsschulung und alltagsnahe Strategien verbinden kann. Die Therapie orientiert sich dabei immer an Ihrem individuellen Befund."
+            },
+            {
+              "question": "Kann ich trotz Training weiterhin Beschwerden haben?",
+              "answer": "Ja, das ist durchaus möglich. Nicht jedes Training ist bei einer Rektusdiastase automatisch hilfreich. Manchmal werden Übungen durchgeführt, die zu früh, zu intensiv oder nicht passend für die aktuelle Situation sind. Dann kann es sein, dass Beschwerden bestehen bleiben oder sich die Bauchmitte weiterhin instabil anfühlt. Eine gezielte physiotherapeutische Anleitung kann helfen, geeignete Übungen für Sie zu finden."
+            },
+            {
+              "question": "Gibt es einen Zusammenhang zwischen Bauchwand und Beckenboden?",
+              "answer": "Ja, Bauchwand, Atmung, Beckenboden und Rumpfstabilität arbeiten eng zusammen. Wenn die Bauchmitte geschwächt oder funktionell beeinträchtigt ist, kann sich das auch auf den Beckenboden auswirken. Umgekehrt kann ein instabiler oder überlasteter Beckenboden die Situation zusätzlich beeinflussen. Deshalb betrachte ich die Beschwerden immer im Zusammenhang und nicht nur isoliert auf die Bauchdecke bezogen."
+            },
+            {
+              "question": "Was ist das Ziel der physiotherapeutischen Behandlung?",
+              "answer": "Das Ziel ist, Ihre Körpermitte funktionell zu stärken und Ihre Beschwerden im Alltag zu verringern. Dabei geht es um mehr Stabilität, eine bessere Wahrnehmung der Bauchwand, sinnvoll abgestimmte Übungen und mehr Sicherheit bei Belastungen. Die Behandlung soll Ihnen helfen, Ihren Körper wieder besser zu verstehen und ihn im Alltag gezielt zu unterstützen."
+            }
+          ]
+        },
+        {
+          "_type": "faq",
+          "anchor": "faq-schwangerschaft",
+          "title": "Häufige Fragen zur Physiotherapie während der Schwangerschaft",
+          "items": [
+            {
+              "question": "Wann ist Physiotherapie in der Schwangerschaft sinnvoll?",
+              "answer": "Physiotherapie kann in der Schwangerschaft sinnvoll sein, wenn Sie Beschwerden wie Rückenschmerzen, Symphysenschmerzen, Verspannungen oder Probleme im Beckenbodenbereich haben. Sie kann aber auch vorbeugend eingesetzt werden, um den Körper auf die Veränderungen während der Schwangerschaft und auf die Geburt vorzubereiten."
+            },
+            {
+              "question": "Mit welchen Beschwerden kann ich während der Schwangerschaft zu Ihnen kommen?",
+              "answer": "Sie können sich an mich wenden, wenn Sie zum Beispiel unter Rückenschmerzen, Beckenschmerzen, Symphysenbeschwerden, Verspannungen, Druck im Beckenboden oder Inkontinenz leiden. Auch wenn Sie sich unsicher fühlen oder Ihren Körper in dieser besonderen Zeit besser wahrnehmen möchten, kann eine physiotherapeutische Begleitung hilfreich sein."
+            },
+            {
+              "question": "Ist Physiotherapie in der Schwangerschaft sicher?",
+              "answer": "Ja, physiotherapeutische Behandlungen werden individuell an Ihre Schwangerschaft und Ihre aktuelle körperliche Situation angepasst. Mir ist wichtig, dass Sie sich jederzeit sicher und gut aufgehoben fühlen. Die Übungen und Maßnahmen werden so gewählt, dass sie Sie unterstützen, ohne Sie unnötig zu belasten."
+            },
+            {
+              "question": "Kann Physiotherapie bei Rückenschmerzen in der Schwangerschaft helfen?",
+              "answer": "Ja, Rückenschmerzen gehören zu den häufigsten Beschwerden in der Schwangerschaft. Durch gezielte Übungen, Entlastungspositionen und eine bessere Körperwahrnehmung kann die Physiotherapie helfen, Schmerzen zu lindern und Fehlbelastungen im Alltag zu reduzieren. Dabei schauen wir immer gemeinsam, was Ihrem Körper guttut."
+            },
+            {
+              "question": "Wie kann Physiotherapie den Beckenboden in der Schwangerschaft unterstützen?",
+              "answer": "In der Schwangerschaft verändert sich die Belastung auf den Beckenboden deutlich. Ich unterstütze Sie dabei, Ihren Beckenboden besser wahrzunehmen, ihn gezielt zu aktivieren und angemessen zu entspannen. Das kann helfen, Beschwerden vorzubeugen und ein gutes Körpergefühl für die Zeit vor, während und nach der Geburt zu entwickeln."
+            },
+            {
+              "question": "Unterstützen Sie auch bei der Geburtsvorbereitung?",
+              "answer": "Ja, ein Teil der physiotherapeutischen Begleitung kann auch in der Geburtsvorbereitung liegen. Dazu gehören zum Beispiel die Wahrnehmung des Beckenbodens, Atemarbeit, hilfreiche Bewegungen und das Finden von Positionen, die Ihnen unter der Geburt guttun können. So lernen Sie, Ihren Körper bewusster einzusetzen und Vertrauen in die eigenen Möglichkeiten zu entwickeln."
+            },
+            {
+              "question": "Kann Physiotherapie bei Inkontinenz in der Schwangerschaft helfen?",
+              "answer": "Ja, auch bei Inkontinenzbeschwerden kann Physiotherapie sinnvoll sein. Durch gezielte Übungen, Wahrnehmungsschulung und alltagsnahe Anleitung kann der Beckenboden unterstützt werden. Ziel ist es, Ihnen mehr Sicherheit im Alltag zu geben und die Belastbarkeit des Beckenbodens zu verbessern."
+            },
+            {
+              "question": "Wie läuft eine physiotherapeutische Behandlung in der Schwangerschaft ab?",
+              "answer": "Zu Beginn steht immer ein ausführliches Gespräch über Ihre Beschwerden, Ihr Schwangerschaftsstadium und Ihre individuellen Bedürfnisse. Danach untersuche ich behutsam, welche Bereiche Unterstützung brauchen, und stimme die Behandlung darauf ab. Je nach Situation können Übungen, Körperwahrnehmung, Entlastungsstrategien und Beratung Teil der Therapie sein."
+            },
+            {
+              "question": "Kann ich auch ohne akute Beschwerden zur Physiotherapie kommen?",
+              "answer": "Ja, Physiotherapie kann auch ohne akute Beschwerden sinnvoll sein. Viele Schwangere nutzen die Behandlung, um ihren Körper besser zu verstehen, Beschwerden vorzubeugen und sich bewusst auf die Geburt vorzubereiten. Gerade die frühzeitige Begleitung kann helfen, Veränderungen im Körper sicherer einzuordnen und besser mit ihnen umzugehen."
+            },
+            {
+              "question": "Was ist das Ziel der Physiotherapie in der Schwangerschaft?",
+              "answer": "Das Ziel ist, Sie in dieser besonderen Zeit bestmöglich zu unterstützen. Dazu gehört, Beschwerden zu lindern, den Beckenboden sinnvoll zu begleiten, Ihr Körpergefühl zu stärken und Ihnen Sicherheit für Schwangerschaft, Geburt und die Zeit danach zu geben. Die Therapie orientiert sich immer an Ihrer persönlichen Situation und Ihren individuellen Bedürfnissen."
+            }
+          ]
+        },
+        {
+          "_type": "faq",
+          "anchor": "faq-beckenboden",
+          "title": "Häufige Fragen zur Behandlung von Beckenbodenbeschwerden",
+          "items": [
+            {
+              "question": "Woran erkenne ich, dass mein Beckenboden Unterstützung braucht?",
+              "answer": "Hinweise auf Beckenbodenbeschwerden können sehr unterschiedlich sein. Manche Patientinnen bemerken ungewollten Urinverlust, ein Druck- oder Senkungsgefühl, Schmerzen im Beckenbereich oder Beschwerden beim Sitzen, Husten oder Sport. Auch Schmerzen in der Sexualität, wiederkehrender Harndrang oder ein unsicheres Gefühl in der Körpermitte können Anzeichen dafür sein, dass der Beckenboden gezielte Unterstützung braucht."
+            },
+            {
+              "question": "Bei welchen Beschwerden kann Beckenboden-Physiotherapie helfen?",
+              "answer": "Eine Beckenbodenbehandlung kann bei vielen unterschiedlichen Beschwerden sinnvoll sein, zum Beispiel bei Inkontinenz, Senkungsbeschwerden, Verspannungen im Beckenboden, Schmerzen im Intimbereich oder nach gynäkologischen und urologischen Operationen. Auch bei tiefen Rückenschmerzen, Instabilitätsgefühl oder funktionellen Beschwerden im Beckenbereich kann die Therapie helfen, die Zusammenhänge besser zu verstehen und gezielt zu behandeln."
+            },
+            {
+              "question": "Muss ich Beschwerden im Beckenboden einfach hinnehmen?",
+              "answer": "Nein, Beschwerden im Beckenboden sollten nicht einfach als normal hingenommen werden. Viele Betroffene warten lange, obwohl gezielte physiotherapeutische Unterstützung oft spürbar helfen kann. Gerade weil das Thema häufig schambehaftet ist, ist eine einfühlsame und fachkundige Begleitung besonders wichtig. Beschwerden dürfen ernst genommen und behandelt werden."
+            },
+            {
+              "question": "Wie läuft die erste Behandlung bei Beckenbodenbeschwerden ab?",
+              "answer": "Am Anfang steht ein ausführliches Gespräch, in dem wir Ihre Beschwerden, Ihre Vorgeschichte und Ihre persönlichen Ziele besprechen. Danach erfolgt eine behutsame physiotherapeutische Befunderhebung. Auf dieser Grundlage plane ich mit Ihnen die weiteren Schritte. Mir ist wichtig, dass Sie jederzeit wissen, was gemacht wird, und sich in der Behandlung sicher und respektvoll begleitet fühlen."
+            },
+            {
+              "question": "Was passiert in der Beckenboden-Physiotherapie konkret?",
+              "answer": "Die Behandlung kann verschiedene Bausteine umfassen. Dazu gehören die Wahrnehmung des Beckenbodens, gezielte Kräftigung, Lockerung oder Dehnung der Muskulatur sowie alltagsnahe Übungen. Je nach Beschwerdebild können auch Entspannungstechniken, Atemarbeit, Strategien bei Drangbeschwerden oder Hinweise für Bewegungsabläufe im Alltag Teil der Therapie sein. Ziel ist immer, Ihre Beschwerden gezielt zu lindern und Ihre Lebensqualität zu verbessern."
+            },
+            {
+              "question": "Hilft Physiotherapie auch bei Inkontinenz?",
+              "answer": "Ja, bei vielen Formen von Inkontinenz kann Physiotherapie sehr sinnvoll sein. Entscheidend ist dabei, ob der Beckenboden eher geschwächt, überlastet oder verspannt ist. Deshalb ist eine individuelle Befunderhebung so wichtig. Mit gezielten Übungen, verbesserter Körperwahrnehmung und alltagspraktischen Strategien kann die Therapie helfen, mehr Kontrolle und Sicherheit zurückzugewinnen."
+            },
+            {
+              "question": "Kann ein verspannter Beckenboden ebenfalls Beschwerden verursachen?",
+              "answer": "Ja, nicht nur ein zu schwacher, sondern auch ein zu angespannter Beckenboden kann Beschwerden auslösen. Dazu gehören zum Beispiel Schmerzen, Druckgefühle, Probleme beim Wasserlassen oder Beschwerden in der Sexualität. In solchen Fällen geht es in der Therapie nicht um weiteres Anspannen, sondern darum, die Muskulatur besser wahrzunehmen, gezielt zu entspannen und wieder in ein funktionelles Gleichgewicht zu bringen."
+            },
+            {
+              "question": "Ist Beckenboden-Physiotherapie nur nach einer Geburt sinnvoll?",
+              "answer": "Nein, Beckenbodenbeschwerden betreffen nicht nur Frauen nach einer Geburt. Sie können in ganz unterschiedlichen Lebensphasen auftreten, etwa durch hormonelle Veränderungen, Operationen, chronische Belastungen, Schmerzen oder funktionelle Störungen. Auch ohne Schwangerschaft oder Geburt kann eine gezielte physiotherapeutische Behandlung des Beckenbodens sinnvoll und entlastend sein."
+            },
+            {
+              "question": "Wie viele Behandlungen sind in der Regel notwendig?",
+              "answer": "Das lässt sich nicht pauschal sagen, weil Beschwerden und Ursachen sehr unterschiedlich sein können. Manche Patientinnen profitieren schon nach wenigen Terminen von mehr Verständnis, gezielten Übungen und konkreten Strategien für den Alltag. Bei komplexeren oder länger bestehenden Beschwerden kann eine längere Begleitung sinnvoll sein. Entscheidend ist, dass die Therapie individuell auf Sie abgestimmt wird."
+            },
+            {
+              "question": "Was ist das Ziel der Behandlung bei Beckenboden-Dysfunktionen?",
+              "answer": "Das Ziel ist, Ihre Beschwerden spürbar zu lindern und Ihnen mehr Sicherheit im Alltag zu geben. Gleichzeitig geht es darum, Ihren Beckenboden besser zu verstehen, ihn passend zu aktivieren oder zu entspannen und ungünstige Belastungsmuster zu verändern. So kann die Therapie dazu beitragen, Ihre Körperwahrnehmung, Stabilität und Lebensqualität nachhaltig zu verbessern."
+            }
+          ]
+        },
+        {
+          "_type": "faq",
+          "anchor": "faq-leistungen",
+          "title": "Häufige Fragen zu weiteren physiotherapeutischen Leistungen",
+          "items": [
+            {
+              "question": "Welche weiteren physiotherapeutischen Leistungen bieten Sie an?",
+              "answer": "Zu meinen weiteren Leistungen zählen unter anderem Beckenbodentherapie nach Physio Pelvica, Mamas Mitte bei Rektusdiastase, BeBo® Gesundheitstraining, Manuelle Therapie, viszerale Therapie, neurophysiologische Therapie nach Bobath, reflektorische Atemtherapie, Kieferbehandlung bei CMD, craniosacrale Therapie, somato-emotionale Entspannung, Manuelle Lymphdrainage, Kinesiotaping beziehungsweise K-Taping sowie Basale Stimulation. Welche Behandlung sinnvoll ist, richtet sich immer nach Ihrem individuellen Beschwerdebild."
+            },
+            {
+              "question": "Für welche Beschwerden ist Manuelle Therapie geeignet?",
+              "answer": "Manuelle Therapie kann zum Beispiel bei Rücken-, Nacken- und Gelenkschmerzen, Bewegungseinschränkungen, muskulären Verspannungen oder Beschwerden nach Fehlbelastungen sinnvoll sein. Ziel ist es, die Beweglichkeit zu verbessern, Schmerzen zu lindern und gestörte Funktionen im Zusammenspiel von Gelenken, Muskeln und Nerven positiv zu beeinflussen."
+            },
+            {
+              "question": "Bei welchen Beschwerden kann eine Beckenbodentherapie helfen?",
+              "answer": "Eine Beckenbodentherapie kann bei Inkontinenz, Senkungsbeschwerden, Druckgefühlen im Becken, Schmerzen im Beckenbereich oder nach gynäkologischen und urologischen Operationen hilfreich sein. Auch bei Unsicherheit in der Körpermitte, wiederkehrendem Harndrang oder Beschwerden rund um Schwangerschaft und Rückbildung kann eine gezielte Behandlung des Beckenbodens sinnvoll sein."
+            },
+            {
+              "question": "Was ist „Mamas Mitte\" und wann ist diese Behandlung sinnvoll?",
+              "answer": "„Mamas Mitte\" ist eine physiotherapeutische Begleitung bei Bauchwanddysfunktionen, insbesondere bei Rektusdiastase. Sie kann sinnvoll sein, wenn Sie nach einer Schwangerschaft ein Instabilitätsgefühl in der Bauchmitte haben, Rückenschmerzen verspüren, Ihre Bauchdecke trotz Training nicht stabil wirkt oder Sie den Eindruck haben, dass Ihre Körpermitte nicht gut zusammenarbeitet. Ziel ist eine funktionelle Stabilisierung im Alltag."
+            },
+            {
+              "question": "Wann kann viszerale Therapie hilfreich sein?",
+              "answer": "Viszerale Therapie kann sinnvoll sein, wenn Beschwerden mit Spannungen und Bewegungseinschränkungen im Bauch- oder Rumpfbereich zusammenhängen. Manche Patientinnen berichten zum Beispiel über ein diffuses Spannungsgefühl, eingeschränkte Beweglichkeit, Beschwerden nach Operationen oder ein unangenehmes Körpergefühl im Bauchraum. Die Behandlung zielt darauf ab, Beweglichkeit und Spannung im Gewebe zu regulieren und den Körper in seinem Zusammenspiel zu unterstützen."
+            },
+            {
+              "question": "Bei welchen Beschwerden kommt die Bobath-Therapie infrage?",
+              "answer": "Die neurophysiologische Therapie nach Bobath kann bei neurologisch bedingten Einschränkungen eingesetzt werden, zum Beispiel wenn Bewegungsabläufe, Körperspannung, Koordination oder Gleichgewicht beeinträchtigt sind. Das kann nach neurologischen Erkrankungen oder bei funktionellen Einschränkungen sinnvoll sein. Ziel ist es, alltagsrelevante Bewegungen zu fördern und vorhandene Fähigkeiten gezielt zu unterstützen."
+            },
+            {
+              "question": "Wann ist eine reflektorische Atemtherapie sinnvoll?",
+              "answer": "Eine reflektorische Atemtherapie kann hilfreich sein, wenn Sie das Gefühl haben, nicht frei durchatmen zu können, unter Spannungen im Brustkorb leiden oder Ihre Atmung durch Schmerzen, Schonhaltungen oder muskuläre Einschränkungen beeinflusst wird. Auch bei Erschöpfung, Haltungsproblemen oder dem Gefühl, dass Atmung und Körpermitte nicht gut zusammenarbeiten, kann diese Therapie unterstützend wirken."
+            },
+            {
+              "question": "Was ist CMD und wann kann eine Kieferbehandlung helfen?",
+              "answer": "CMD steht für craniomandibuläre Dysfunktion. Gemeint sind Funktionsstörungen im Zusammenspiel von Kiefergelenk, Muskulatur und Haltung. Eine Kieferbehandlung kann sinnvoll sein bei Kieferknacken, Zähnepressen, Verspannungen im Gesicht, Kopfschmerzen, Nackenbeschwerden oder Schmerzen rund um Kiefer und Schläfen. Häufig stehen diese Beschwerden nicht nur mit dem Kiefer selbst, sondern auch mit Haltung und muskulären Spannungsmustern in Verbindung."
+            },
+            {
+              "question": "Wobei helfen Manuelle Lymphdrainage und Kinesiotaping?",
+              "answer": "Manuelle Lymphdrainage kann bei Schwellungen, Stauungsgefühlen oder nach Operationen hilfreich sein, wenn das Gewebe entlastet und der Lymphfluss unterstützt werden soll. Kinesiotaping beziehungsweise K-Taping kann ergänzend eingesetzt werden, zum Beispiel bei muskulären Verspannungen, Überlastungsbeschwerden, Instabilitätsgefühl oder zur Unterstützung bestimmter Bewegungsabläufe. Ob das in Ihrem Fall sinnvoll ist, hängt immer vom konkreten Befund ab."
+            },
+            {
+              "question": "Wie finden wir heraus, welche zusätzliche Leistung zu meinem Beschwerdebild passt?",
+              "answer": "Zu Beginn besprechen wir Ihre Beschwerden, Ihre Vorgeschichte und Ihre Ziele sehr genau. Danach untersuche ich, welche Strukturen und Funktionen betroffen sind und welche Behandlung für Sie am sinnvollsten ist. Nicht jede Methode passt zu jedem Beschwerdebild. Deshalb entwickle ich gemeinsam mit Ihnen eine individuelle Therapie, die sich an Ihrem Alltag, Ihren Bedürfnissen und Ihrem körperlichen Befund orientiert."
+            }
+          ]
+        },
+        {
+          "_type": "section",
+          "title": "Ich freue mich auf Ihre Anfrage",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Sie möchten einen Termin vereinbaren oder haben Fragen zu einer Behandlung?<br>Nehmen Sie gerne Kontakt mit mir auf. Gemeinsam finden wir einen passenden Termin für Ihre Behandlung oder Beratung.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Terminvereinbarung",
+                  "href": "/kontakt/"
+                }
+              ]
+            }
+          ],
+          "anchor": "kontakt",
+          "tone": "cta"
+        }
+      ]
+    },
+    {
+      "title": "Kurse",
+      "slug": "kurse",
+      "seo": {
+        "metaTitle": "Kurse: Beckenbodentraining & Yoga in Engelskirchen | Villa Adebar",
+        "metaDescription": "Beckenbodentraining „Starke Mitte“, Yoga in der Rückbildung und Yoga für Schwangere in der Villa Adebar, Engelskirchen-Ründeroth. Termine, Sprechstunde und Kursbuchung."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Kurse und Angebote",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Neben der individuellen Terminvereinbarung können Sie auch meine Sprechstunde nutzen oder einen der angebotenen Kurse besuchen.</p>\n<p>Alle Behandlungen, Kurse und Angebote finden in der <a href=\"https://villa-adebar.de/\">Villa Adebar in Engelskirchen</a> statt. Aus diesem Grund führen die folgenden Angebote direkt zur entsprechenden Seite der Villa Adebar, auf der Sie weitere Informationen sowie die Termin- und Kursbuchung finden.</p>\n<ul>\n<li><a href=\"https://villa-adebar.de/physiotherapie-sprechstunde/\">Zeiten Sprechstunde &gt;&gt;&gt;</a></li>\n<li><a href=\"https://villa-adebar.de/beckenbodenkurs/\">Kurszeiten Beckenbodentraining &gt;&gt;&gt;</a></li>\n<li><a href=\"https://villa-adebar.de/yoga/\">Kurszeiten Yoga &gt;&gt;&gt;</a></li>\n</ul>"
+            }
+          ],
+          "image": "media:kurse-villa-adebar.jpg",
+          "alt": "Yoga und Kurse in der Villa Adebar in Engelskirchen"
+        },
+        {
+          "_type": "cards",
+          "items": [
+            {
+              "title": "Beckenbodentraining „Starke Mitte“",
+              "image": "media:anatomie-starke-mitte.jpg",
+              "alt": "Anatomie Kurs Starke Mitte",
+              "text": "Egal, ob Ihre Geburt erst kürzlich stattgefunden hat oder schon einige Jahre zurückliegt – dieser Kurs richtet sich an Mütter, die ihren Beckenboden gezielt kräftigen und ihre Körpermitte wieder stärken möchten.",
+              "linkLabel": "zum Beckenbodentraining",
+              "href": "https://villa-adebar.de/beckenbodenkurs/"
+            },
+            {
+              "title": "Yoga in der Rückbildung",
+              "image": "media:sprechstunde-beckenboden.jpg",
+              "alt": "Yoga in der Rückbildung",
+              "text": "Yoga in der Rückbildung hilft Frauen dabei, nach der Geburt zu entspannen und neue Kraft zu schöpfen. Gleichzeitig werden Beckenboden-, Bauch- und Rückenmuskulatur gestärkt und Verspannungen gelöst.",
+              "linkLabel": "zu den Yoga-Kursen",
+              "href": "https://villa-adebar.de/yoga/"
+            },
+            {
+              "anchor": "yoga-schwangere",
+              "title": "Yoga für Schwangere",
+              "image": "media:yoga-schwangere.jpg",
+              "alt": "Yoga für Schwangere",
+              "text": "Yoga kann Ihnen helfen, sich körperlich und mental auf die Geburt vorzubereiten. Ihr Körper wird gestärkt, die Körperwahrnehmung verbessert und die Atmung bewusster.",
+              "more": "Die bewusste Atmung und das Loslassen von Gedanken während der Yogaübungen können dabei helfen, bei Stress und innerer Anspannung zur Ruhe zu kommen. Die sanften Bewegungen fördern zudem die Durchblutung. Davon profitieren nicht nur Sie, sondern auch Ihr Baby, das dadurch besser mit Sauerstoff und Nährstoffen versorgt wird.\n\nYoga stärkt Ihr Selbstvertrauen und kann dazu beitragen, Ängste vor der Geburt zu reduzieren. Spezielle Atemtechniken können – je nach Situation – sowohl beruhigend als auch aktivierend wirken. Während der Geburt kann die richtige Atmung außerdem helfen, unter den Wehen nicht zu verkrampfen und den Schmerz besser zu bewältigen.\n\nGenießen Sie in den Stunden sanfte und stärkende Yogaübungen, die entspannen und gleichzeitig neue Kraft geben.",
+              "linkLabel": "zu den Yoga-Kursen",
+              "href": "https://villa-adebar.de/yoga/"
+            }
+          ]
+        },
+        {
+          "_type": "section",
+          "title": "Ich freue mich auf Ihre Anfrage",
+          "level": "h2",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Sie möchten einen Termin vereinbaren oder haben Fragen zu einer Behandlung?<br>Nehmen Sie gerne Kontakt mit mir auf. Gemeinsam finden wir einen passenden Termin für Ihre Behandlung oder Beratung.</p>"
+            },
+            {
+              "_type": "buttons",
+              "items": [
+                {
+                  "label": "Terminvereinbarung",
+                  "href": "/kontakt/"
+                }
+              ]
+            }
+          ],
+          "anchor": "kontakt",
+          "tone": "cta"
+        }
+      ]
+    },
+    {
+      "title": "Patientenhinweis",
+      "slug": "patientenhinweis",
+      "seo": {
+        "metaTitle": "Patientenhinweise – Privatpraxis Physiotherapie Wiebke Reister",
+        "metaDescription": "Wichtige Hinweise: Abrechnung als Privatpraxis (Privatrezept oder Selbstzahler), Terminvereinbarung und 24-Stunden-Absagefrist, Behandlungsablauf und Datenschutz."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Hinweise für Patientinnen und Patienten",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<p>Damit die Behandlung in meiner Praxis für alle Beteiligten in einer angenehmen und verlässlichen Atmosphäre stattfinden kann, habe ich einige organisatorische Hinweise zusammengestellt.</p>\n<h2>Privatpraxis für Physiotherapie</h2>\n<p>Meine Praxis wird als <strong>Privatpraxis für Physiotherapie</strong> geführt.<br>Die Behandlung erfolgt daher auf Grundlage einer <strong>privaten Verordnung oder als Selbstzahlerleistung</strong>. Eine Abrechnung über gesetzliche Krankenkassen ist leider nicht möglich.</p>\n<p>Privatversicherte, Beihilfeberechtigte oder Patientinnen und Patienten mit einer entsprechenden Zusatzversicherung können die Rechnung häufig bei ihrer Versicherung einreichen. Bitte informieren Sie sich vor Beginn der Behandlung über die individuellen Erstattungsbedingungen Ihrer Versicherung.</p>\n<h2>Terminvereinbarung</h2>\n<p>Ich arbeite ausschließlich mit individuell vereinbarten Terminen, damit ich mir für jede Patientin und jeden Patienten ausreichend Zeit nehmen kann.</p>\n<p>Sollten Sie einen Termin einmal nicht wahrnehmen können, bitte ich Sie, diesen <strong>spätestens 24 Stunden vorher abzusagen</strong>. So kann der Termin gegebenenfalls noch an andere Patientinnen oder Patienten vergeben werden.</p>\n<p>Bei kurzfristigen Absagen oder nicht wahrgenommenen Terminen kann der Termin leider in Rechnung gestellt werden.</p>\n<h2>Bankverbindung</h2>\n<p><strong>Wiebke Reister</strong><br>Kreditinstitut: Kreissparkasse Köln | DE59 3705 0299 0325 5655 92</p>\n<h2>Informationen zur Behandlung</h2>\n<p>Bitte informieren Sie mich vor Beginn der Behandlung über bestehende Beschwerden, Vorerkrankungen oder andere gesundheitliche Besonderheiten, die für die Therapie relevant sein könnten. Nur so kann ich die Behandlung bestmöglich auf Ihre persönliche Situation abstimmen.</p>\n<h2>Persönliche Gegenstände</h2>\n<p>Für persönliche Gegenstände, die in die Praxisräume mitgebracht werden, kann leider keine Haftung übernommen werden.</p>\n<h2>Datenschutz</h2>\n<p>Der verantwortungsvolle Umgang mit Ihren persönlichen Daten ist für mich selbstverständlich. Alle Daten werden vertraulich behandelt und ausschließlich im Rahmen der gesetzlichen Datenschutzbestimmungen gespeichert und verarbeitet.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kontakt",
+      "slug": "kontakt",
+      "seo": {
+        "metaTitle": "Kontakt & Termin – Physiotherapie Wiebke Reister, Engelskirchen",
+        "metaDescription": "Termin vereinbaren: Villa Adebar, Oststraße 16, 51766 Engelskirchen, Tel. 0163 2890824. Sprechstunde donnerstags 12–17 Uhr, Behandlung Mo–Fr nach Vereinbarung."
+      },
+      "body": [
+        {
+          "_type": "map",
+          "title": "Villa Adebar, Engelskirchen",
+          "address": "Oststrasse 16 · 51766 Engelskirchen",
+          "query": "Villa Adebar, Oststrasse 16, 51766 Engelskirchen"
+        },
+        {
+          "_type": "contact"
+        }
+      ]
+    },
+    {
+      "title": "Impressum",
+      "slug": "impressum",
+      "seo": {
+        "metaTitle": "Impressum – Physiotherapie Wiebke Reister",
+        "metaDescription": "Impressum und Anbieterkennzeichnung der Privatpraxis für Physiotherapie Wiebke Reister, Engelskirchen."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Impressum",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<h2>Betreiber</h2>\n<p>Wiebke Reister<br>Inhaberin<br>Oststrasse 16<br>Villa Adebar<br>51766 Engelskirchen / Ründeroth</p>\n<p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Wiebke Reister, Anschrift wie oben.</p>\n<h2>Kontakt</h2>\n<p>Telefon: <a href=\"tel:+491632890824\">01632890824</a><br>E-Mail: <a href=\"mailto:wiebke.reister@gmail.com\">wiebke.reister@gmail.com</a></p>\n<h2>Aufsichtsbehörde</h2>\n<p>Oberbergischer Kreis – Gesundheitsamt<br>Am Wiedenhof 1–3<br>51643 Gummersbach<br>Telefon: 02261 88-5341</p>\n<p><a href=\"https://www.obk.de/\">https://www.obk.de/</a></p>\n<h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>\n<p>Berufsbezeichnung: Staatlich anerkannte Physiotherapeutin (verliehen in Deutschland)<br>Zusatzqualifikation: Sektorale Heilpraktikerin für Physiotherapie (Erlaubnis erteilt durch das Gesundheitsamt Köln)<br>Berufsrechtliche Regelungen: Masseur- und Physiotherapeutengesetz (MPhG), Heilpraktikergesetz (HeilprG)<br>Für Physiotherapeutinnen besteht keine Kammerzugehörigkeit.</p>\n<h2>Angaben zur Berufshaftpflichtversicherung</h2>\n<p>Name und Sitz des Versicherers:<br>Continentale<br>Ruhrallee 92<br>44139 Dortmund</p>\n<p>Geltungsraum der Versicherung:<br>Deutschland</p>\n<h2>Umsatzsteuer</h2>\n<p>Physiotherapeutische Leistungen sind gemäß § 4 Nr. 14 UStG von der Umsatzsteuer befreit; eine Umsatzsteuer-Identifikationsnummer ist daher nicht vorhanden. Die Kurse werden über das Yogastudio abgerechnet.</p>\n<h2>Verbraucherstreitbeilegung</h2>\n<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>\n<h2>Bildnachweis</h2>\n<ul>\n<li>Praxisfotos: <a href=\"https://www.jenskoch-tv.de\">Jens Koch</a></li>\n<li><a href=\"https://stock.adobe.com/de/images/young-beautiful-pregnant-yoga-posing-in-studio/173121707\">https://stock.adobe.com/de/images/young-beautiful-pregnant-yoga-posing-in-studio/173121707</a></li>\n<li><a href=\"https://stock.adobe.com/de/images/young-beautiful-pregnant-yoga-posing-in-studio/173121642\">https://stock.adobe.com/de/images/young-beautiful-pregnant-yoga-posing-in-studio/173121642</a></li>\n</ul>"
+            }
+          ],
+          "image": "media:wiebke-reister-yoga-logo.jpg",
+          "alt": "Wiebke Reister Yoga Physiotherapie Logo"
+        }
+      ]
+    },
+    {
+      "title": "Datenschutzerklärung",
+      "slug": "datenschutz",
+      "seo": {
+        "metaTitle": "Datenschutzerklärung – Physiotherapie Wiebke Reister",
+        "metaDescription": "Informationen zum Umgang mit personenbezogenen Daten auf wiebkereister.de."
+      },
+      "body": [
+        {
+          "_type": "section",
+          "title": "Datenschutz­erklärung",
+          "level": "h1",
+          "children": [
+            {
+              "_type": "richtext",
+              "html": "<h2>1. Datenschutz auf einen Blick</h2>\n<h3>Allgemeine Hinweise</h3>\n<p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>\n<h3>Datenerfassung auf dieser Website</h3>\n<h4>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>\n<p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.</p>\n<h4>Wie erfassen wir Ihre Daten?</h4>\n<p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie uns bei einer Terminanfrage per E-Mail oder Telefon mitteilen.</p>\n<p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>\n<h4>Wofür nutzen wir Ihre Daten?</h4>\n<p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Eine Analyse Ihres Nutzerverhaltens (Tracking) findet auf dieser Website nicht statt.</p>\n<h4>Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>\n<p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>\n<p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>\n<h2>2. Hosting</h2>\n<h3>Externes Hosting</h3>\n<p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>\n<p>Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).</p>\n<p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>\n<p>Wir setzen folgenden Hoster ein:</p>\n<p>Webgo GmbH<br>Heidenkampsweg 81<br>20097 Hamburg</p>\n<h4>Auftragsverarbeitung</h4>\n<p>Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.</p>\n<h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>\n<h3>Datenschutz</h3>\n<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>\n<p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>\n<p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>\n<h3>Hinweis zur verantwortlichen Stelle</h3>\n<p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>\n<p>Wiebke Reister<br>Oststrasse 16<br>51766 Engelskirchen / Ründeroth</p>\n<p>Telefon: <a href=\"tel:+491632890824\">0163-2890824</a><br>E-Mail: <a href=\"mailto:wiebke.reister@gmail.com\">wiebke.reister@gmail.com</a></p>\n<p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>\n<h3>Speicherdauer</h3>\n<p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>\n<h3>Hinweis zur Datenweitergabe in die USA und sonstige Drittstaaten</h3>\n<p>Wir verwenden unter anderem Tools von Unternehmen mit Sitz in den USA oder sonstigen datenschutzrechtlich nicht sicheren Drittstaaten. Wenn diese Tools aktiv sind, können Ihre personenbezogene Daten in diese Drittstaaten übertragen und dort verarbeitet werden. Wir weisen darauf hin, dass in diesen Ländern kein mit der EU vergleichbares Datenschutzniveau garantiert werden kann. Beispielsweise sind US-Unternehmen dazu verpflichtet, personenbezogene Daten an Sicherheitsbehörden herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen könnten. Es kann daher nicht ausgeschlossen werden, dass US-Behörden (z. B. Geheimdienste) Ihre auf US-Servern befindlichen Daten zu Überwachungszwecken verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese Verarbeitungstätigkeiten keinen Einfluss.</p>\n<h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>\n<p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>\n<h3>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>\n<p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p>\n<p>WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>\n<h3>Beschwerde­recht bei der zuständigen Aufsichts­behörde</h3>\n<p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>\n<h3>Recht auf Daten­übertrag­barkeit</h3>\n<p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>\n<h3>SSL- bzw. TLS-Verschlüsselung</h3>\n<p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>\n<p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>\n<h3>Auskunft, Löschung und Berichtigung</h3>\n<p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.</p>\n<h3>Recht auf Einschränkung der Verarbeitung</h3>\n<p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p>\n<ul>\n<li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>\n<li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>\n<li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>\n<li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>\n</ul>\n<p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.</p>\n<h3>Widerspruch gegen Werbe-E-Mails</h3>\n<p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.</p>\n<h2>4. Datenerfassung auf dieser Webseite</h2>\n<h3>Cookies</h3>\n<p>Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.</p>\n<p>Teilweise können auch Cookies von Drittunternehmen auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite betreten (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die Nutzung bestimmter Dienstleistungen des Drittunternehmens (z. B. Cookies zur Abwicklung von Zahlungsdienstleistungen).</p>\n<p>Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Websitefunktionen ohne diese nicht funktionieren würden (z. B. die Warenkorbfunktion oder die Anzeige von Videos). Andere Cookies dienen dazu, das Nutzerverhalten auszuwerten oder Werbung anzuzeigen.</p>\n<p>Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs (notwendige Cookies) oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (funktionale Cookies, z. B. für die Warenkorbfunktion) oder zur Optimierung der Website (z. B. Cookies zur Messung des Webpublikums) erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Sofern eine Einwilligung zur Speicherung von Cookies abgefragt wurde, erfolgt die Speicherung der betreffenden Cookies ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist jederzeit widerrufbar.</p>\n<p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>\n<p>Soweit Cookies von Drittunternehmen oder zu Analysezwecken eingesetzt werden, werden wir Sie hierüber im Rahmen dieser Datenschutzerklärung gesondert informieren und ggf. eine Einwilligung abfragen.</p>\n<h3>Einwilligung über den Cookie-Hinweis (ideaDIGITAL Cookie &amp; IP Suite)</h3>\n<p>Diese Website nutzt einen eigenen, lokal betriebenen Cookie-Hinweis (ideaDIGITAL Cookie &amp; IP Suite), um Ihre Einwilligung zum Laden externer Inhalte – derzeit ausschließlich die Google-Maps-Karte auf der Kontaktseite – einzuholen und zu dokumentieren. Es werden keine Daten an Dritte übermittelt.</p>\n<p>Wenn Sie eine Auswahl treffen, wird ein technisch notwendiges Cookie in Ihrem Browser gespeichert, das Ihre Entscheidung (Alle akzeptieren, Nur notwendige, Ablehnen) sowie die Version des Hinweises enthält. Das Cookie hat eine Laufzeit von 30 Tagen; danach werden Sie erneut gefragt. Sie können Ihre Entscheidung jederzeit über den Button „Cookie-Einstellungen“ unten rechts auf jeder Seite ändern.</p>\n<p>Zusätzlich wird für eine anonyme Reichweitenstatistik lediglich gezählt, wie oft der Hinweis angezeigt und wie entschieden wurde; IP-Adressen werden dabei nicht gespeichert.</p>\n<p>Rechtsgrundlage für die Speicherung des Einwilligungs-Cookies ist § 25 Abs. 2 Nr. 2 TDDDG in Verbindung mit Art. 6 Abs. 1 lit. c DSGVO (Nachweis der Einwilligung nach Art. 7 Abs. 1 DSGVO).</p>\n<h3>Server-Log-Dateien</h3>\n<p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>\n<ul>\n<li>Browsertyp und Browserversion</li>\n<li>verwendetes Betriebssystem</li>\n<li>Referrer URL</li>\n<li>Hostname des zugreifenden Rechners</li>\n<li>Uhrzeit der Serveranfrage</li>\n<li>IP-Adresse</li>\n</ul>\n<p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>\n<p>Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>\n<h3>Anfrage per E-Mail, Telefon oder Telefax</h3>\n<p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>\n<p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>\n<p>Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.</p>\n<h3>Terminvereinbarung und Verarbeitung von Patientendaten</h3>\n<p>Wenn Sie telefonisch oder per E-Mail einen Termin vereinbaren, verarbeiten wir Ihre Kontaktdaten (Name, Telefonnummer, E-Mail-Adresse) sowie die zur Terminplanung erforderlichen Angaben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung und Durchführung des Behandlungsvertrags).</p>\n<p>Im Rahmen der physiotherapeutischen Behandlung verarbeiten wir darüber hinaus Gesundheitsdaten (z. B. Beschwerden, Befunde, Vorerkrankungen, Behandlungsverlauf). Diese Verarbeitung erfolgt zum Zweck der Gesundheitsversorgung auf Grundlage von Art. 9 Abs. 2 lit. h DSGVO in Verbindung mit § 22 Abs. 1 Nr. 1 lit. b BDSG und dem Behandlungsvertrag (§ 630a BGB). Die Behandlungsdokumentation wird gemäß § 630f Abs. 3 BGB für zehn Jahre nach Abschluss der Behandlung aufbewahrt.</p>\n<p>Eine Weitergabe an Dritte (z. B. private Krankenversicherungen, Beihilfestellen oder mitbehandelnde Ärztinnen und Ärzte) erfolgt nur mit Ihrer Einwilligung oder soweit eine gesetzliche Verpflichtung besteht. Die Rechnungsstellung erfolgt über die Praxis selbst; die für die Buchführung geltenden steuerrechtlichen Aufbewahrungsfristen (§ 147 AO) bleiben unberührt.</p>\n<h2>5. Plugins und Tools</h2>\n<h3>Google Web Fonts (lokales Hosting)</h3>\n<p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet dabei nicht statt.</p>\n<p>Weitere Informationen zu Google Web Fonts finden Sie unter <a href=\"https://developers.google.com/fonts/faq\">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a href=\"https://policies.google.com/privacy?hl=de\">https://policies.google.com/privacy?hl=de</a>.</p>\n<h3>Google Maps (Zwei-Klick-Lösung)</h3>\n<p>Auf der Kontaktseite binden wir eine Karte von Google Maps ein. Die Karte wird aus Datenschutzgründen nicht automatisch geladen, sondern erst, nachdem Sie auf „Karte anzeigen“ geklickt oder im Cookie-Hinweis „Alle akzeptieren“ gewählt haben. Erst dann werden Daten (u. a. Ihre IP-Adresse) an Google übertragen. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG; sie ist jederzeit widerrufbar.</p>\n<p>Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland.</p>\n<p>Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Wenn Google Maps aktiviert ist, kann Google zum Zwecke der einheitlichen Darstellung der Schriftarten Google Web Fonts verwenden. Beim Aufruf von Google Maps lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>\n<p>Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist jederzeit widerrufbar.</p>\n<p>Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier: <a href=\"https://privacy.google.com/businesses/gdprcontrollerterms/\">https://privacy.google.com/businesses/gdprcontrollerterms/</a> und <a href=\"https://privacy.google.com/businesses/gdprcontrollerterms/sccs/\">https://privacy.google.com/businesses/gdprcontrollerterms/sccs/</a>.</p>\n<p>Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: <a href=\"https://policies.google.com/privacy?hl=de\">https://policies.google.com/privacy?hl=de</a>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "navigations": [
+    {
+      "name": "Hauptmenü",
+      "key": "main",
+      "items": [
+        {
+          "_type": "navitem",
+          "title": "Startseite",
+          "items": [],
+          "page": "page:index"
+        },
+        {
+          "_type": "navitem",
+          "title": "Über mich",
+          "items": [],
+          "page": "page:ueber-mich"
+        },
+        {
+          "_type": "navitem",
+          "title": "Physiotherapie",
+          "items": [
+            {
+              "_type": "navitem",
+              "title": "Direkt zu",
+              "items": [
+                {
+                  "_type": "navitem",
+                  "title": "Physiotherapie – Übersicht",
+                  "items": [],
+                  "page": "page:physiotherapie"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Leistungen im Überblick",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Behandlung ohne Rezept (FAQ)",
+                  "items": [],
+                  "url": "/physiotherapie/#faq1"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Termin anfragen",
+                  "items": [],
+                  "page": "page:kontakt"
+                }
+              ]
+            },
+            {
+              "_type": "navitem",
+              "title": "Leistungen",
+              "items": [
+                {
+                  "_type": "navitem",
+                  "title": "Manuelle Therapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Beckenbodentherapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Rektusdiastasen-Therapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Viszerale Therapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Bobath-Therapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Atemtherapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "CMD-Behandlung",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Craniosacrale Therapie",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Lymphdrainage",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Kinesiotaping",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                },
+                {
+                  "_type": "navitem",
+                  "title": "Basale Stimulation",
+                  "items": [],
+                  "url": "/physiotherapie/#leistungen"
+                }
+              ]
+            }
+          ],
+          "page": "page:physiotherapie"
+        },
+        {
+          "_type": "navitem",
+          "title": "Kurse",
+          "items": [
+            {
+              "_type": "navitem",
+              "title": "Kurse und Angebote – Übersicht",
+              "items": [],
+              "page": "page:kurse"
+            },
+            {
+              "_type": "navitem",
+              "title": "Beckenbodentraining „Starke Mitte“",
+              "items": [],
+              "url": "https://villa-adebar.de/beckenbodenkurs/"
+            },
+            {
+              "_type": "navitem",
+              "title": "Yoga in der Rückbildung",
+              "items": [],
+              "url": "https://villa-adebar.de/yoga/"
+            },
+            {
+              "_type": "navitem",
+              "title": "Yoga für Schwangere",
+              "items": [],
+              "url": "/kurse/#yoga-schwangere"
+            }
+          ],
+          "page": "page:kurse"
+        },
+        {
+          "_type": "navitem",
+          "title": "Patientenhinweis",
+          "items": [],
+          "page": "page:patientenhinweis"
+        },
+        {
+          "_type": "navitem",
+          "title": "Kontakt",
+          "items": [],
+          "page": "page:kontakt"
+        }
+      ]
+    },
+    {
+      "name": "Button im Header und Footer",
+      "key": "cta",
+      "items": [
+        {
+          "_type": "navitem",
+          "title": "Terminvereinbarung",
+          "items": [],
+          "page": "page:kontakt"
+        }
+      ]
+    },
+    {
+      "name": "Rechtliches (Footer)",
+      "key": "legal",
+      "items": [
+        {
+          "_type": "navitem",
+          "title": "Impressum",
+          "items": [],
+          "page": "page:impressum"
+        },
+        {
+          "_type": "navitem",
+          "title": "Datenschutz",
+          "items": [],
+          "page": "page:datenschutz"
+        }
+      ]
+    }
+  ]
+}

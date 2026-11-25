@@ -1,0 +1,67 @@
+{{define "block/section"}}{{$b := .Block}}{{$level := str $b.level}}
+<section class="section tone-{{with str $b.tone}}{{.}}{{else}}plain{{end}}{{if $b.image}} has-image image-{{with str $b.imageSide}}{{.}}{{else}}right{{end}}{{end}}"{{with $b.anchor}} id="{{.}}"{{end}}>
+  <div class="container section-grid">
+    <div class="section-text">
+      {{with $b.kicker}}<p class="kicker">{{.}}</p>{{end}}
+      {{if eq $level "h1"}}<h1 class="section-title">{{$b.title}}</h1>{{else if eq $level "h3"}}<h3 class="section-title small">{{$b.title}}</h3>{{else}}<h2 class="section-title">{{$b.title}}</h2>{{end}}
+      {{blocks $b.children .Page}}
+    </div>
+    {{with $b.image}}<figure class="section-image"><img src="{{.}}" alt="{{$b.alt}}"{{if ne $level "h1"}} loading="lazy"{{end}}></figure>{{end}}
+  </div>
+</section>{{end}}
+
+{{define "block/buttons"}}<p class="buttons">{{range .Block.items}}<a class="button" href="{{.href}}">{{.label}}</a>{{end}}</p>{{end}}
+
+{{define "block/logos"}}<ul class="logos">{{range .Block.items}}<li>{{if .href}}<a href="{{.href}}"><img src="{{.image}}" alt="{{.alt}}" loading="lazy"></a>{{else}}<img src="{{.image}}" alt="{{.alt}}" loading="lazy">{{end}}</li>{{end}}</ul>{{end}}
+
+{{define "block/faq"}}{{$b := .Block}}
+<section class="section faq"{{with $b.anchor}} id="{{.}}"{{end}}>
+  <div class="container narrow">
+    <h2 class="section-title">{{$b.title}}</h2>
+    {{range $b.items}}<details>
+      <summary>{{.question}}</summary>
+      {{range paragraphs .answer}}<p>{{.}}</p>{{end}}
+    </details>{{end}}
+  </div>
+</section>{{end}}
+
+{{define "block/cards"}}
+<section class="section cards">
+  <div class="container cards-grid">
+    {{range $it := .Block.items}}<article class="card"{{with .anchor}} id="{{.}}"{{end}}>
+      {{with .image}}<img src="{{.}}" alt="{{$it.alt}}" loading="lazy">{{end}}
+      <h2>{{.title}}</h2>
+      {{range paragraphs .text}}<p>{{.}}</p>{{end}}
+      {{with .more}}<details class="more"><summary><span class="when-closed">Mehr erfahren</span><span class="when-open">Weniger anzeigen</span></summary>{{range paragraphs .}}<p>{{.}}</p>{{end}}</details>{{end}}
+      {{with .href}}<a class="more-link" href="{{.}}">{{$it.linkLabel}} &gt;&gt;&gt;</a>{{end}}
+    </article>{{end}}
+  </div>
+</section>{{end}}
+
+{{define "block/map"}}{{$b := .Block}}
+<section class="section map-section">
+  <div class="container">
+    <div class="map" data-map-src="{{mapsEmbedURL $b.query}}" data-map-title="Karte: {{$b.title}}">
+      <div class="map-consent">
+        <p class="map-title">{{$b.title}}</p>
+        {{with $b.address}}<p>{{.}}</p>{{end}}
+        <p class="small">Zum Schutz Ihrer Daten wird die Karte erst nach Ihrem Klick geladen. Dabei werden Daten (u. a. Ihre IP-Adresse) an Google übertragen. Mehr dazu in der <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
+        <p class="buttons">
+          <button class="button" type="button" data-map-show>Karte anzeigen</button>
+          <a class="button outline" href="{{mapsURL $b.query}}" target="_blank" rel="noopener">Route in Google Maps öffnen<span class="visually-hidden"> (öffnet in neuem Tab)</span></a>
+        </p>
+      </div>
+      <div class="map-frame" hidden></div>
+      <p class="buttons" hidden data-map-controls><button class="button outline" type="button" data-map-hide>Karte ausblenden</button></p>
+    </div>
+  </div>
+</section>{{end}}
+
+{{define "block/contact"}}{{$c := .Page.Site.contact}}
+<section class="section tone-muted contact">
+  <div class="container contact-grid">
+    <div><h2 class="contact-title">Anschrift</h2><p>{{with $c.locationName}}{{.}}<br>{{end}}{{with $c.street}}{{.}}<br>{{end}}{{$c.city}}</p></div>
+    <div><h2 class="contact-title">Kurszeiten</h2><p>{{range $i, $l := lines $c.hours}}{{if $i}}<br>{{end}}{{$l}}{{end}}</p></div>
+    <div><h2 class="contact-title">Kontakt</h2>{{with $c.locationName}}<p>{{if $c.locationURL}}<a href="{{$c.locationURL}}">{{.}}</a>{{else}}{{.}}{{end}}</p>{{end}}{{template "reach" $c}}</div>
+  </div>
+</section>{{end}}
