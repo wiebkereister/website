@@ -92,49 +92,22 @@ rolls back to the previous release (the last 5 are kept in
    `DEPLOY_HOST` (IP/hostname), `DEPLOY_SSH_KEY` (private key) and
    `DEPLOY_KNOWN_HOSTS` (`ssh-keyscan -t ed25519 <host>`).
 4. Merge to `main` → dev is live. Create a release → prod is live.
-5. Create the admin users, per environment:
-   `sudo -u deploy env $(cat /etc/wiebkereister/dev.env | xargs) /opt/wiebkereister/dev/current/wiebkereister user add you@example.com`
+5. Create the admin users, per environment (the password is read from stdin):
+
+   ```sh
+   sudo -u deploy bash -c 'cd /opt/wiebkereister/dev/current && set -a && . /etc/wiebkereister/dev.env && set +a && ./wiebkereister user add you@example.com'
+   ```
 
 ### Switching to the domains
 
 The Caddyfile already contains the domains, so the only step is DNS: point the
 A records of `dev`, then `wiebkereister.de` and `www` to the server's IP.
 Caddy fetches the Let's Encrypt certificates on its own as soon as a record
-resolves. Leave e-mail records (MX, SPF, DKIM) untouched, and remove any old
-AAAA record or point it at the server's IPv6 address.
+resolves. Leave the e-mail records (MX, SPF, DKIM) and the nameservers
+untouched; an old AAAA record must be removed or point to the server's IPv6
+address.
 
 Afterwards set `BASEPLATE_SECURE_COOKIES=1` in `/etc/wiebkereister/<env>.env`
 (`sudo systemctl restart wiebkereister@<env>`); with it on, the admin only
 works over HTTPS, no longer via the IP. Then close port 8081 (`ufw delete
 allow 8081/tcp`). Re-run `bootstrap.sh` to roll out a changed Caddyfile.
-
-### DNS-Umstellung (Anweisung für die bisherige Agentur)
-
-Bitte nur diese Einträge der Zone `wiebkereister.de` ändern:
-
-| Name | Typ | Neuer Wert | Bisher |
-|---|---|---|---|
-| `dev.wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
-| `wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
-| `www.wiebkereister.de` | A | `92.205.56.194` | `185.30.32.67` |
-
-Optional (IPv6), jeweils für dieselben drei Namen: Typ `AAAA`, Wert
-`2a00:1169:111:c8c0::`. Aktuell gibt es keine AAAA-Einträge, es reicht also,
-die drei A-Einträge zu ändern.
-
-**Bitte unverändert lassen:**
-
-- alle `MX`-, `SPF`-/`TXT`- und `DKIM`-Einträge (die E-Mail-Postfächer laufen
-  weiter beim bisherigen Hoster),
-- die Nameserver (`ns1`–`ns4.webgo.de`); die Domain bleibt dort, es ändern sich
-  nur die drei Einträge oben.
-
-**Ablauf:**
-
-1. Etwa 24 Stunden vorher die TTL der drei Einträge auf 300 Sekunden senken.
-2. Zuerst nur `dev.wiebkereister.de` umstellen. Wir prüfen, ob die Seite
-   unter `https://dev.wiebkereister.de` mit gültigem Zertifikat läuft.
-3. Nach unserer Freigabe `wiebkereister.de` und `www` umstellen. Das
-   HTTPS-Zertifikat holt der Server selbst, auf eurer Seite ist dafür nichts zu tun.
-4. Rückgängig machen geht jederzeit, indem die Einträge wieder auf
-   `185.30.32.67` gesetzt werden.
