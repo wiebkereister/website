@@ -67,13 +67,12 @@ go test ./...
 ## Deployment
 
 Two environments run on one server (Host Europe VPS), each with its own
-data directory, port and systemd service, behind Caddy:
+data directory, port and systemd service, behind Caddy (automatic HTTPS):
 
 | | dev | prod |
 |---|---|---|
 | Trigger | push/merge to `main` | published GitHub release |
-| URL (now) | `http://<IP>:8081` | `http://<IP>` |
-| URL (later) | `https://dev.wiebkereister.de` | `https://wiebkereister.de` |
+| URL | `https://dev.wiebkereister.de` | `https://wiebkereister.de` |
 | Service | `wiebkereister@dev` | `wiebkereister@prod` |
 | Data | `/var/lib/wiebkereister/dev` | `/var/lib/wiebkereister/prod` |
 
@@ -97,17 +96,3 @@ rolls back to the previous release (the last 5 are kept in
    ```sh
    sudo -u deploy bash -c 'cd /opt/wiebkereister/dev/current && set -a && . /etc/wiebkereister/dev.env && set +a && ./wiebkereister user add you@example.com'
    ```
-
-### Switching to the domains
-
-The Caddyfile already contains the domains, so the only step is DNS: point the
-A records of `dev`, then `wiebkereister.de` and `www` to the server's IP.
-Caddy fetches the Let's Encrypt certificates on its own as soon as a record
-resolves. Leave the e-mail records (MX, SPF, DKIM) and the nameservers
-untouched; an old AAAA record must be removed or point to the server's IPv6
-address.
-
-Afterwards set `BASEPLATE_SECURE_COOKIES=1` in `/etc/wiebkereister/<env>.env`
-(`sudo systemctl restart wiebkereister@<env>`); with it on, the admin only
-works over HTTPS, no longer via the IP. Then close port 8081 (`ufw delete
-allow 8081/tcp`). Re-run `bootstrap.sh` to roll out a changed Caddyfile.
