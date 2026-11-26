@@ -4,7 +4,7 @@ go 1.26.0
 
 toolchain go1.26.10
 
-require github.com/janmarkuslanger/baseplate v0.8.0
+require github.com/janmarkuslanger/baseplate v0.10.0
 
 require (
 	github.com/dustin/go-humanize v1.1.0 // indirect
