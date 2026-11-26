@@ -169,3 +169,9 @@ h4 { font-size: 1.25rem; font-weight: 400; }
 .section-text > h3 { margin-top: 2.5rem; }
 .section-grid > *, .cards-grid > *, .footer-grid > *, .contact-grid > * { min-width: 0; }
 h1, h2, h3 { overflow-wrap: break-word; }
+
+/* Page transitions between pages (cross-document view transitions): the
+   header stays in place, the content fades. Browsers without support ignore it. */
+@view-transition { navigation: auto; }
+.site-header { view-transition-name: site-header; }
+@media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }
