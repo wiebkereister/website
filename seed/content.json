@@ -15,6 +15,16 @@
       "hours": "Montag bis Freitag 8-20 Uhr\nTermin nur nach Vereinbarung\nSprechstunde Do von 12-17 Uhr",
       "footerText": "Privatpraxis für Physiotherapie in der Villa Adebar in Engelskirchen – individuelle Termine, Sprechstunde und Kurse rund um Beckenboden, Rückbildung und Physiotherapie."
     },
+    "localBusiness": {
+      "type": "Physiotherapy",
+      "phone": "+491632890824",
+      "email": "wiebke.reister@gmail.com",
+      "street": "Oststrasse 16",
+      "postalCode": "51766",
+      "city": "Engelskirchen",
+      "country": "DE",
+      "openingHours": "Mo-Fr 08:00-20:00"
+    },
     "menuTeaser": {
       "title": "Sprechstunde: Beckenboden / Rektusdiastase",
       "text": "Abklärung und Beratung in der Villa Adebar in Engelskirchen.",

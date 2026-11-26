@@ -9,6 +9,7 @@ import (
 	"github.com/janmarkuslanger/baseplate"
 	"github.com/janmarkuslanger/baseplate/fields"
 	"github.com/janmarkuslanger/baseplate/plugins/access"
+	"github.com/janmarkuslanger/baseplate/plugins/localbusiness"
 	"github.com/janmarkuslanger/baseplate/plugins/navigation"
 )
 
@@ -26,6 +27,7 @@ func New(cfg baseplate.Config) *baseplate.App {
 		fields.CoreBlocks{Only: []string{"heading", "richtext", "image"}},
 		navigation.New(),
 		access.New(),
+		localbusiness.New(),
 		Plugin{},
 	)
 }

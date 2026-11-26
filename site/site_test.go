@@ -166,3 +166,34 @@ func TestSeedUnknownPage(t *testing.T) {
 		t.Fatalf("err = %v, want an error naming the unknown page", err)
 	}
 }
+
+// The structured data of baseplate v0.10: WebSite and the practice (from
+// plugins/localbusiness) on the home page, breadcrumbs on the others.
+func TestStructuredData(t *testing.T) {
+	ctx := context.Background()
+	app, dist := setup(t)
+	if err := Seed(ctx, app.Registry, os.DirFS("../seed")); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := app.Builder.Build(ctx); err != nil {
+		t.Fatal(err)
+	}
+	home := read(t, filepath.Join(dist, "index.html"))
+	for _, want := range []string{
+		`"@type":"WebSite"`,
+		`"@type":"Physiotherapy"`,
+		`"telephone":"+491632890824"`,
+		`"addressLocality":"Engelskirchen"`,
+		`"openingHours":["Mo-Fr 08:00-20:00"]`,
+	} {
+		if !strings.Contains(home, want) {
+			t.Errorf("index.html lacks %s", want)
+		}
+	}
+	if strings.Contains(home, `"@type":"Organization"`) {
+		t.Error("the organization is the Physiotherapy node")
+	}
+	if page := read(t, filepath.Join(dist, "physiotherapie", "index.html")); !strings.Contains(page, `"@type":"BreadcrumbList"`) {
+		t.Error("physiotherapie/index.html lacks the breadcrumbs")
+	}
+}
