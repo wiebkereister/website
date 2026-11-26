@@ -4,8 +4,15 @@
 #
 #   prod: https://wiebkereister.de        (fallback: http://<IP>/)
 #   dev:  https://dev.wiebkereister.de   (fallback: http://<IP>:8081/)
+# URLs of the previous WordPress site (known to Google Search Console)
+(redirects) {
+	redir /sitemap_index.xml /sitemap.xml permanent
+	redir /page-sitemap.xml /sitemap.xml permanent
+}
+
 wiebkereister.de {
 	encode zstd gzip
+	import redirects
 	reverse_proxy 127.0.0.1:18080
 }
 
@@ -15,6 +22,7 @@ www.wiebkereister.de {
 
 dev.wiebkereister.de {
 	encode zstd gzip
+	import redirects
 	header X-Robots-Tag "noindex, nofollow"
 	reverse_proxy 127.0.0.1:18081
 }
@@ -22,11 +30,13 @@ dev.wiebkereister.de {
 # access by IP (no certificate possible)
 http://:80 {
 	encode zstd gzip
+	import redirects
 	reverse_proxy 127.0.0.1:18080
 }
 
 http://:8081 {
 	encode zstd gzip
+	import redirects
 	header X-Robots-Tag "noindex, nofollow"
 	reverse_proxy 127.0.0.1:18081
 }
